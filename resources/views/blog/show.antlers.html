@@ -1,0 +1,42 @@
+{{? $time = microtime(true) ?}}
+{{ hero_image_1 }}
+    Initial: {{ url }} {{ width }}<br>
+{{ /hero_image_1 }}
+{{? echo (microtime(true) - $time) * 1000 ?}}
+
+<br><br>
+
+{{? $time = microtime(true) ?}}
+{{ hero_image_2 }}
+    Secondary: {{ url }} {{ width }}<br>
+{{ /hero_image_2 }}
+{{? echo ($secs[] = microtime(true) - $time) * 1000 ?}}
+
+<br><br>
+
+{{? $time = microtime(true) ?}}
+{{ hero_image_3 }}
+    Secondary: {{ url }} {{ width }}<br>
+{{ /hero_image_3 }}
+{{? echo ($secs[] = microtime(true) - $time) * 1000 ?}}
+
+<br><br>
+
+{{? $time = microtime(true) ?}}
+{{ hero_image_4 }}
+    Secondary: {{ url }} {{ width }}<br>
+{{ /hero_image_4 }}
+{{? echo ($secs[] = microtime(true) - $time) * 1000 ?}}
+
+<br><br>
+
+{{? $time = microtime(true) ?}}
+{{ hero_image_5 }}
+    Secondary: {{ url }} {{ width }}<br>
+{{ /hero_image_5 }}
+{{? echo ($secs[] = microtime(true) - $time) * 1000 ?}}
+
+<br><br>
+
+Average Secondary:<br>
+{{? echo (array_sum($secs) / count($secs)) * 1000 ?}}
