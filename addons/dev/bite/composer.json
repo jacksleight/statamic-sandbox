@@ -1,0 +1,19 @@
+{
+    "name": "dev/bite",
+    "autoload": {
+        "psr-4": {
+            "Dev\\Bite\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Bite",
+            "description": "Bite addon"
+        },
+        "laravel": {
+            "providers": [
+                "Dev\\Bite\\ServiceProvider"
+            ]
+        }
+    }
+}

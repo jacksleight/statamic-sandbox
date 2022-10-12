@@ -1,0 +1,19 @@
+{
+    "name": "dev/kite",
+    "autoload": {
+        "psr-4": {
+            "Dev\\Kite\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Kite",
+            "description": "Kite addon"
+        },
+        "laravel": {
+            "providers": [
+                "Dev\\Kite\\ServiceProvider"
+            ]
+        }
+    }
+}
