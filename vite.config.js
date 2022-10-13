@@ -7,8 +7,8 @@ export default defineConfig({
         laravel([
             'resources/css/tailwind.css',
             'resources/js/site.js',
-            'resources/js/cp.js',
             'resources/css/cp.css',
+            'resources/js/cp.js',
         ]),
         vue(),
     ],

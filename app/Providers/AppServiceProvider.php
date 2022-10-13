@@ -25,12 +25,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // Statamic::script('app', 'cp');
         Statamic::vite('app', [
-            'resources/js/cp.js',
             'resources/css/cp.css',
+            'resources/js/cp.js',
         ]);
-
-        Vite::useHotFile(base_path('addons/dev/bite/public/hot'));
     }
 }
