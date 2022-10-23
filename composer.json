@@ -12,11 +12,11 @@
         "php": "^8.0",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
-        "jacksleight/statamic-bard-mutator": "dev-main as 1.0.999",
-        "jacksleight/statamic-bard-texstyle": "dev-main as 1.0.999",
+        "jacksleight/statamic-bard-mutator": "dev-bard2 as 2.0.999",
+        "jacksleight/statamic-bard-texstyle": "dev-bard2 as 2.0.999",
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
-        "statamic/cms": "3.3.*",
+        "statamic/cms": "dev-master as 3.4.999",
         "laravel/sanctum": "^2.14"
     },
     "require-dev": {
