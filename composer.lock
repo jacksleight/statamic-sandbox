@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f89714fda9fd34cb87b66bc3d6215e8",
+    "content-hash": "78e7ae451f4195f17357cb302714caec",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -4853,17 +4853,11 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.3.48",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/statamic/cms.git",
-                "reference": "d7f3259da21dd6533d4a0a76fc118c50bbbfe171"
-            },
+            "version": "3.3.x-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/d7f3259da21dd6533d4a0a76fc118c50bbbfe171",
-                "reference": "d7f3259da21dd6533d4a0a76fc118c50bbbfe171",
-                "shasum": ""
+                "type": "path",
+                "url": "/Users/jack/Sites/statamic-cms",
+                "reference": "7023c6c775c03cbfe84396d236ad79f6816fd690"
             },
             "require": {
                 "ajthinking/archetype": "^1.0.3",
@@ -4896,7 +4890,7 @@
                 "fakerphp/faker": "~1.10",
                 "google/cloud-translate": "^1.6",
                 "mockery/mockery": "^1.2.3",
-                "orchestra/testbench": "^6.18 || ^7.0"
+                "orchestra/testbench": "^6.7.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -4920,15 +4914,20 @@
                 }
             },
             "autoload": {
+                "psr-4": {
+                    "Statamic\\": "src/"
+                },
                 "files": [
                     "src/helpers.php",
                     "src/namespaced_helpers.php"
-                ],
+                ]
+            },
+            "autoload-dev": {
                 "psr-4": {
-                    "Statamic\\": "src/"
+                    "Tests\\": "tests",
+                    "Foo\\Bar\\": "tests/Fixtures/Addon"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -4939,17 +4938,9 @@
                 "laravel",
                 "statamic"
             ],
-            "support": {
-                "issues": "https://github.com/statamic/cms/issues",
-                "source": "https://github.com/statamic/cms/tree/v3.3.48"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/statamic",
-                    "type": "github"
-                }
-            ],
-            "time": "2022-10-20T14:10:38+00:00"
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "statamic/stringy",
@@ -10809,9 +10800,18 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "statamic/cms",
+            "version": "3.3.9999999.9999999-dev",
+            "alias": "3.3.999",
+            "alias_normalized": "3.3.999.0"
+        }
+    ],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "statamic/cms": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

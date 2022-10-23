@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
-        "statamic/cms": "3.3.*",
+        "statamic/cms": "3.3.x-dev as 3.3.999",
         "laravel/sanctum": "^2.14"
     },
     "require-dev": {
@@ -26,6 +26,12 @@
         "phpunit/phpunit": "^9.5.10",
         "spatie/laravel-ignition": "^1.0"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/jack/Sites/statamic-cms"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
