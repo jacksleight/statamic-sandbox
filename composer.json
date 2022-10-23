@@ -12,6 +12,8 @@
         "php": "^8.0",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
+        "jacksleight/statamic-bard-mutator": "dev-main as 1.0.999",
+        "jacksleight/statamic-bard-texstyle": "dev-main as 1.0.999",
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
         "statamic/cms": "3.3.*",
@@ -26,6 +28,16 @@
         "phpunit/phpunit": "^9.5.10",
         "spatie/laravel-ignition": "^1.0"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/jack/Sites/statamic-bard-texstyle"
+        },
+        {
+            "type": "path",
+            "url": "/Users/jack/Sites/statamic-bard-mutator"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",

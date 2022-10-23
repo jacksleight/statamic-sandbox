@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f89714fda9fd34cb87b66bc3d6215e8",
+    "content-hash": "612745a96beedc7c8261dfd351f8aa52",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -1859,6 +1859,81 @@
                 }
             ],
             "time": "2022-05-21T17:30:32+00:00"
+        },
+        {
+            "name": "jacksleight/statamic-bard-mutator",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/Users/jack/Sites/statamic-bard-mutator",
+                "reference": "95b0cadb342eccfad186e4834fb99593e3c7a766"
+            },
+            "require": {
+                "statamic/cms": "~3.1.14 || 3.2.* || 3.3.*"
+            },
+            "require-dev": {
+                "nunomaduro/collision": "^6.2",
+                "orchestra/testbench": "^7.5",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Bard Mutator",
+                    "description": "This Statamic addon allows you to modify the data and tags rendered by the Bard fieldtype, giving you full control over the final HTML."
+                },
+                "laravel": {
+                    "providers": [
+                        "JackSleight\\StatamicBardMutator\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JackSleight\\StatamicBardMutator\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Tests\\": "tests"
+                }
+            },
+            "transport-options": {
+                "relative": false
+            }
+        },
+        {
+            "name": "jacksleight/statamic-bard-texstyle",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "/Users/jack/Sites/statamic-bard-texstyle",
+                "reference": "da04fc5133db88b8ec477a194087ade4641e42e6"
+            },
+            "require": {
+                "jacksleight/statamic-bard-mutator": "^1.0.3",
+                "statamic/cms": "~3.2.24 || 3.3.*"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Bard Texstyle",
+                    "description": "This Statamic addon gives you the ability to add custom heading, paragraph and inline (span) text styles to the Bard fieldtype."
+                },
+                "laravel": {
+                    "providers": [
+                        "JackSleight\\StatamicBardTexstyle\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JackSleight\\StatamicBardTexstyle\\": "src"
+                }
+            },
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "james-heinrich/getid3",
@@ -10809,9 +10884,25 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "jacksleight/statamic-bard-mutator",
+            "version": "dev-main",
+            "alias": "1.0.999",
+            "alias_normalized": "1.0.999.0"
+        },
+        {
+            "package": "jacksleight/statamic-bard-texstyle",
+            "version": "dev-main",
+            "alias": "1.0.999",
+            "alias_normalized": "1.0.999.0"
+        }
+    ],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "jacksleight/statamic-bard-mutator": 20,
+        "jacksleight/statamic-bard-texstyle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
