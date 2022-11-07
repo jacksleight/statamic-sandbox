@@ -1,0 +1,60 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: miniset
+        field:
+          fields:
+            -
+              handle: size
+              field:
+                options:
+                  sm: null
+                  md: null
+                  lg: null
+                display: Size
+                type: button_group
+                icon: button_group
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+            -
+              handle: extra
+              field:
+                input_type: text
+                antlers: false
+                display: Extra
+                type: text
+                icon: text
+                listable: hidden
+                instructions_position: above
+                visibility: visible
+                always_save: false
+          variants:
+            normal: null
+            hover: null
+          display: Miniset
+          type: miniset_classes
+          icon: '<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round"><path d="M7.254 12.084c0-.552-.448-1.001-1-1.001H1.34c-.552 0-1 .449-1 1.001v.833a1 1 0 0 0 1 1h4.914a1 1 0 0 0 1-1v-.833Zm8.407 0c0-.552-.448-1.001-1-1.001H9.747c-.552 0-1 .449-1 1.001v.833a1 1 0 0 0 1 1h4.914a1 1 0 0 0 1-1v-.833Zm-8.414-4.5c0-.552-.448-1.001-1-1.001H1.333c-.552 0-1 .449-1 1.001v.833a1 1 0 0 0 1 1h4.914a1 1 0 0 0 1-1v-.833Zm8.407 0c0-.552-.448-1.001-1-1.001H9.74c-.552 0-1 .449-1 1.001v.833a1 1 0 0 0 1 1h4.914a1 1 0 0 0 1-1v-.833Zm-8.4-4.5c0-.552-.448-1.001-1-1.001H1.34c-.552 0-1 .449-1 1.001v.833a1 1 0 0 0 1 1h4.914a1 1 0 0 0 1-1v-.833Zm8.407 0c0-.552-.448-1.001-1-1.001H9.747c-.552 0-1 .449-1 1.001v.833a1 1 0 0 0 1 1h4.914a1 1 0 0 0 1-1v-.833Z" style="fill:none;stroke:#000;stroke-width:.7px"/></svg>'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: 'Miniset Test'

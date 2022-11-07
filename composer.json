@@ -15,7 +15,8 @@
         "laravel/framework": "^9.0",
         "laravel/tinker": "^2.7",
         "statamic/cms": "3.3.*",
-        "laravel/sanctum": "^2.14"
+        "laravel/sanctum": "^2.14",
+        "jacksleight/statamic-miniset": "dev-main as 1.0.999"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
@@ -26,6 +27,12 @@
         "phpunit/phpunit": "^9.5.10",
         "spatie/laravel-ignition": "^1.0"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/jack/Sites/statamic-miniset"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
