@@ -41,13 +41,13 @@ return [
     'routes' => [
         'activate'        => '/account/activate',
         'login'           => '/account/login',
-        // 'register'        => '/account/register',
-        // 'profile'         => '/account/profile',
+        'register'        => '/account/register',
+        'profile'         => '/account/profile',
         'forgot_password' => '/account/forgot-password',
         'reset_password'  => '/account/reset-password',
         'change_password' => '/account/change-password',
-        // 'index'           => '/directory',
-        // 'show'            => '/directory/{user}',
+        'index'           => '/directory',
+        'show'            => '/directory/{user}',
     ],
 
     /*
