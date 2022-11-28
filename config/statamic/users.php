@@ -73,7 +73,7 @@ return [
     */
 
     'new_user_groups' => [
-        //
+        'members',
     ],
 
     /*

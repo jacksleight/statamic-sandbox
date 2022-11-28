@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f89714fda9fd34cb87b66bc3d6215e8",
+    "content-hash": "a64f4e733665055a7cb6e65feeb1ebdd",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -1859,6 +1859,47 @@
                 }
             ],
             "time": "2022-05-21T17:30:32+00:00"
+        },
+        {
+            "name": "jacksleight/statamic-memberbox",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jacksleight/statamic-memberbox.git",
+                "reference": "c4fa15fae822b703081d9d26cba1588fb560d636"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jacksleight/statamic-memberbox/zipball/c4fa15fae822b703081d9d26cba1588fb560d636",
+                "reference": "c4fa15fae822b703081d9d26cba1588fb560d636",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^3.2"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Memberbox",
+                    "description": "This Statamic addon provides an out of the box solution for adding a members area or member restricted content to your site, building on Statamic’s existing user management and user form tags."
+                },
+                "laravel": {
+                    "providers": [
+                        "JackSleight\\StatamicMemberbox\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "JackSleight\\StatamicMemberbox\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/jacksleight/statamic-memberbox/issues",
+                "source": "https://github.com/jacksleight/statamic-memberbox/tree/1.0.2"
+            },
+            "time": "2022-07-20T14:46:59+00:00"
         },
         {
             "name": "james-heinrich/getid3",
