@@ -120,7 +120,7 @@ return [
 
     'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Statamic'),
 
-    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', null),
+    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/cp/lazy-logo.svg'),
 
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 

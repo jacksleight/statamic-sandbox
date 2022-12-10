@@ -13,6 +13,7 @@
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
+        "jacksleight/statamic-lazy-logo": "dev-main as 1.0.999",
         "laravel/tinker": "^2.7",
         "statamic/cms": "3.3.*",
         "laravel/sanctum": "^2.14"
@@ -26,6 +27,12 @@
         "phpunit/phpunit": "^9.5.10",
         "spatie/laravel-ignition": "^1.0"
     },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "/Users/jack/Sites/statamic-lazy-logo"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
