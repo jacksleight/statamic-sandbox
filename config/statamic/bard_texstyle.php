@@ -19,7 +19,15 @@ return [
             'name' => 'Hero Heading',
             'ident' => 'H',
             'class' => 'hero-heading',
-            'cp_css' => 'font-family: serif',
+            'cp_badge' => true,
+            'cp_css' => [
+                '&' => [
+                    'font-family' => 'serif',
+                ],
+                '&:first-line' => [
+                    'color' => 'red',
+                ],
+            ],
         ],
 
         'intro' => [
@@ -27,6 +35,7 @@ return [
             'name' => 'Introduction',
             'ident' => 'I',
             'class' => 'introduction',
+            'cp_badge' => true,
             'cp_css' => 'font-size: 1.25em; margin-top: -0.5em',
         ],
 
@@ -35,7 +44,24 @@ return [
             'name' => 'Brand Text',
             'ident' => 'B',
             'class' => 'brand-text',
+            'cp_badge' => true,
             'cp_css' => 'color: dodgerblue; font-weight: 700',
+        ],
+
+        'circle_list' => [
+            'type' => 'bulletList',
+            'name' => 'Unordered List (Circle)',
+            'ident' => '○',
+            'class' => 'circle-list',
+            'cp_css' => 'list-style-type: circle',
+        ],
+
+        'roman_list' => [
+            'type' => 'orderedList',
+            'name' => 'Ordered List (Roman)',
+            'ident' => 'V',
+            'class' => 'roman-list',
+            'cp_css' => 'list-style-type: upper-roman',
         ],
 
         'two_columns' => [
