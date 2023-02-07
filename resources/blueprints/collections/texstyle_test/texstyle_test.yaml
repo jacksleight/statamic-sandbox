@@ -17,10 +17,51 @@ sections:
           previews: true
           smart_typography: false
           buttons:
+            - hero
             - h1
             - h2
             - h3
+            - intro
+            - brand
+            - unorderedlist
+            - orderedlist
+            - circle_list
+            - roman_list
+            - two_columns
+            - three_columns
+            - bts_attrs
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Bard Field'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: bard_field_menu
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - bts_menu
             - hero
+            - h1
+            - h2
+            - h3
             - intro
             - brand
             - unorderedlist
@@ -42,12 +83,26 @@ sections:
           enable_paste_rules: true
           antlers: false
           remove_empty_nodes: false
-          display: 'Bard Field'
+          display: 'Bard Field Menu'
           type: bard
           icon: bard
           listable: hidden
           instructions_position: above
           visibility: visible
+          bts_menu:
+            - hero
+            - intro
+            - brand
+            - circle_list
+            - roman_list
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - unorderedlist
+            - orderedlist
   sidebar:
     display: Sidebar
     fields:

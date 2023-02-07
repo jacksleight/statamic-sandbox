@@ -19,15 +19,8 @@ return [
             'name' => 'Hero Heading',
             'ident' => 'H',
             'class' => 'hero-heading',
-            'cp_badge' => true,
-            'cp_css' => [
-                '&' => [
-                    'font-family' => 'serif',
-                ],
-                '&:first-line' => [
-                    'color' => 'red',
-                ],
-            ],
+            'cp_css' => 'font-family: serif',
+            'cp_badge' => false,
         ],
 
         'intro' => [
@@ -35,8 +28,8 @@ return [
             'name' => 'Introduction',
             'ident' => 'I',
             'class' => 'introduction',
-            'cp_badge' => true,
             'cp_css' => 'font-size: 1.25em; margin-top: -0.5em',
+            'cp_badge' => false,
         ],
 
         'brand' => [
@@ -44,24 +37,38 @@ return [
             'name' => 'Brand Text',
             'ident' => 'B',
             'class' => 'brand-text',
-            'cp_badge' => true,
             'cp_css' => 'color: dodgerblue; font-weight: 700',
+            'cp_badge' => false,
+        ],
+
+        'action' => [
+            'type' => 'link',
+            'name' => 'Action',
+            'ident' => 'A',
+            'class' => 'action',
+            'cp_css' => 'border: 1px solid dodgerblue; padding: 0.25em 0.5em; border-radius: 4px',
+            'cp_badge' => false,
         ],
 
         'circle_list' => [
             'type' => 'bulletList',
-            'name' => 'Unordered List (Circle)',
+            'name' => 'Circle List',
             'ident' => '○',
             'class' => 'circle-list',
             'cp_css' => 'list-style-type: circle',
+            'cp_badge' => false,
         ],
 
         'roman_list' => [
             'type' => 'orderedList',
-            'name' => 'Ordered List (Roman)',
+            'name' => 'Roman List',
             'ident' => 'V',
             'class' => 'roman-list',
-            'cp_css' => 'list-style-type: upper-roman',
+            'cp_css' => [
+                '&' => 'list-style-type: upper-roman',
+                '& ol' => 'list-style-type: lower-roman',
+            ],
+            'cp_badge' => false,
         ],
 
         'two_columns' => [
@@ -69,7 +76,9 @@ return [
             'name' => 'Two Columns',
             'ident' => '❙ ❙',
             'class' => 'two-columns',
+            'cp_badge' => true,
             'cp_css' => 'column-count: 2; column-gap: 1em',
+            'cp_badge' => false,
         ],
 
         'three_columns' => [
@@ -77,6 +86,7 @@ return [
             'name' => 'Three Columns',
             'ident' => '❙❙❙',
             'class' => 'three-columns',
+            'cp_badge' => true,
             'cp_css' => 'column-count: 3; column-gap: 1em',
         ],
 
