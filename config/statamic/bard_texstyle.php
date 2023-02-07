@@ -50,19 +50,19 @@ return [
             'cp_badge' => false,
         ],
 
-        'circle_list' => [
+        'square_list' => [
             'type' => 'bulletList',
-            'name' => 'Circle List',
-            'ident' => '○',
-            'class' => 'circle-list',
-            'cp_css' => 'list-style-type: circle',
+            'name' => 'Square List',
+            'ident' => '■',
+            'class' => 'square-list',
+            'cp_css' => 'list-style-type: square',
             'cp_badge' => false,
         ],
 
         'roman_list' => [
             'type' => 'orderedList',
             'name' => 'Roman List',
-            'ident' => 'V',
+            'ident' => 'IV',
             'class' => 'roman-list',
             'cp_css' => [
                 '&' => 'list-style-type: upper-roman',

@@ -25,7 +25,7 @@ sections:
             - brand
             - unorderedlist
             - orderedlist
-            - circle_list
+            - square_list
             - roman_list
             - two_columns
             - three_columns
@@ -66,10 +66,12 @@ sections:
             - brand
             - unorderedlist
             - orderedlist
-            - circle_list
+            - square_list
             - roman_list
             - two_columns
             - three_columns
+            - anchor
+            - action
           save_html: false
           inline: false
           toolbar_mode: fixed
@@ -93,7 +95,8 @@ sections:
             - hero
             - intro
             - brand
-            - circle_list
+            - action
+            - square_list
             - roman_list
             - h1
             - h2

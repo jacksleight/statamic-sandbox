@@ -12,7 +12,7 @@ bard_field:
     content:
       -
         type: text
-        text: "What's all this then?"
+        text: 'Hero Heading'
   -
     type: paragraph
     attrs:
@@ -35,6 +35,22 @@ bard_field:
               class: brand-text
         text: 'Brand Text'
   -
+    type: bulletList
+    attrs:
+      class: square-list
+    content:
+      -
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Unordered List (Square)'
+  -
     type: orderedList
     attrs:
       class: roman-list
@@ -50,91 +66,46 @@ bard_field:
             content:
               -
                 type: text
-                text: 'Lorem ipsum dolor sit amet'
-          -
-            type: orderedList
-            attrs:
-              class: null
-              start: 1
-            content:
-              -
-                type: listItem
-                content:
-                  -
-                    type: paragraph
-                    attrs:
-                      class: null
-                    content:
-                      -
-                        type: text
-                        text: 'A eaque aliquid et nam'
+                text: 'Ordered List (Roman)'
+  -
+    type: btsDiv
+    attrs:
+      class: two-columns
+    content:
       -
-        type: listItem
+        type: paragraph
+        attrs:
+          class: null
         content:
           -
-            type: paragraph
-            attrs:
-              class: null
-            content:
-              -
-                type: text
-                text: 'Sint velit architecto fuga eaque'
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
       -
-        type: listItem
+        type: paragraph
+        attrs:
+          class: null
         content:
           -
-            type: paragraph
-            attrs:
-              class: null
-            content:
-              -
-                type: text
-                text: 'Incidunt facere nulla magni culpa'
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
       -
-        type: listItem
+        type: paragraph
+        attrs:
+          class: null
         content:
           -
-            type: paragraph
-            attrs:
-              class: null
-            content:
-              -
-                type: text
-                text: 'Vel libero beatae nulla ea'
-  -
-    type: paragraph
-    attrs:
-      class: null
-    content:
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
       -
-        type: text
-        text: 'Unordered List (Circle)'
-  -
-    type: paragraph
-    attrs:
-      class: null
-    content:
-      -
-        type: text
-        text: 'Ordered List (Roman)'
-  -
-    type: paragraph
-    attrs:
-      class: null
-    content:
-      -
-        type: text
-        text: 'Two Columns'
-  -
-    type: paragraph
-    attrs:
-      class: null
-    content:
-      -
-        type: text
-        text: 'Three Columns'
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1675765435
+updated_at: 1675770211
 bard_field_menu:
   -
     type: heading
@@ -168,35 +139,73 @@ bard_field_menu:
               class: brand-text
         text: 'Brand Text'
   -
-    type: paragraph
+    type: bulletList
     attrs:
-      class: null
+      class: square-list
     content:
       -
-        type: text
-        text: 'Unordered List (Circle)'
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Unordered List (Square)'
   -
-    type: paragraph
+    type: orderedList
     attrs:
-      class: null
+      class: roman-list
+      start: 1
     content:
       -
-        type: text
-        text: 'Ordered List (Roman)'
+        type: listItem
+        content:
+          -
+            type: paragraph
+            attrs:
+              class: null
+            content:
+              -
+                type: text
+                text: 'Ordered List (Roman)'
   -
-    type: paragraph
+    type: btsDiv
     attrs:
-      class: null
+      class: two-columns
     content:
       -
-        type: text
-        text: 'Two Columns'
-  -
-    type: paragraph
-    attrs:
-      class: null
-    content:
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
       -
-        type: text
-        text: 'Three Columns'
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
+      -
+        type: paragraph
+        attrs:
+          class: null
+        content:
+          -
+            type: text
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
 ---
