@@ -7,7 +7,7 @@ return [
     | Styles
     |--------------------------------------------------------------------------
     |
-    | List of toggleable styles.
+    | List of styles.
     |
     */
 
@@ -113,6 +113,42 @@ return [
             //     6 => 'heading-6',
             // ],
             // 'paragraph' => 'paragraph',
+        ],
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Attributes (pro only)
+    |--------------------------------------------------------------------------
+    |
+    | The attributes that can be edited through the attributes panel.
+    |
+    */
+
+    'attributes' => [
+        'heading' => [
+            'id' => [
+                'display' => 'ID',
+                'type' => 'text',
+                'default' => 'default-heading-id',
+            ],
+            'class' => [
+                'display' => 'Class',
+                'type' => 'text',
+            ],
+        ],
+        'paragraph' => [
+            'id' => [
+                'display' => 'ID',
+                'type' => 'text',
+                'default' => 'default-paragraph-id',
+            ],
+        ],
+        'orderedList' => [
+            'start' => [
+                'display' => 'Start',
+                'type' => 'text',
+            ],
         ],
     ],
 
