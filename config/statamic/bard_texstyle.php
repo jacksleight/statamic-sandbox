@@ -111,7 +111,7 @@ return [
             //     5 => 'heading-5',
             //     6 => 'heading-6',
             // ],
-            // 'paragraph' => 'paragraph',
+            'paragraph' => 'default-paragraph',
         ],
     ],
 

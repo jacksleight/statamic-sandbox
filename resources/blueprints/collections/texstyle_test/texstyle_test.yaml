@@ -30,6 +30,8 @@ sections:
             - two_columns
             - three_columns
             - bts_attrs
+            - anchor
+            - action
           save_html: false
           inline: false
           toolbar_mode: fixed
