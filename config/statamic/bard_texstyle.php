@@ -37,7 +37,7 @@ return [
             'name' => 'Brand Text',
             'ident' => 'B',
             'class' => 'brand-text',
-            'cp_css' => 'color: dodgerblue; font-weight: 700',
+            'cp_css' => 'color: #ff269e; font-weight: 700',
             'cp_badge' => false,
         ],
 
@@ -46,7 +46,7 @@ return [
             'name' => 'Action',
             'ident' => 'A',
             'class' => 'action',
-            'cp_css' => 'border: 1px solid dodgerblue; padding: 0.25em 0.5em; border-radius: 4px',
+            'cp_css' => 'border: 1px solid #ff269e; color: #ff269e; padding: 0.25em 0.5em; border-radius: 4px',
             'cp_badge' => false,
         ],
 
@@ -128,19 +128,25 @@ return [
 
         'heading' => [
             'id' => [
-                'display' => 'ID',
                 'type' => 'text',
+                'display' => 'ID',
+                'default' => null,
+                'rendered' => true,
             ],
         ],
 
         'orderedList' => [
             'start' => [
-                'display' => 'Start',
                 'type' => 'text',
+                'display' => 'Start',
+                'default' => null,
+                'rendered' => true,
             ],
             'reversed' => [
-                'display' => 'Reversed',
                 'type' => 'toggle',
+                'display' => 'Reversed',
+                'default' => null,
+                'rendered' => true,
             ],
         ],
 

@@ -20,22 +20,7 @@ bard_field:
     content:
       -
         type: text
-        text: 'Introduction (green) Lorem ipsum dolor sit '
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              class: action
-              href: '#'
-              rel: null
-              target: null
-              title: null
-        text: 'action (pink)'
-      -
-        type: text
-        text: ' consectetur adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
+        text: 'Introduction (green) Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
   -
     type: paragraph
     attrs:
@@ -51,7 +36,7 @@ bard_field:
             type: btsSpan
             attrs:
               class: brand-text
-        text: 'brand text (purple)'
+        text: 'consectetur adipisicing'
       -
         type: text
         text: ' elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
@@ -108,7 +93,7 @@ bard_field:
     type: orderedList
     attrs:
       class: roman-list
-      start: '5'
+      start: 5
       reversed: null
     content:
       -
@@ -193,7 +178,7 @@ bard_field:
             type: text
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1675870333
+updated_at: 1675871247
 bard_field_menu:
   -
     type: heading
