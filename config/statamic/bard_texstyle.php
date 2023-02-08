@@ -76,9 +76,8 @@ return [
             'name' => 'Two Columns',
             'ident' => '❙ ❙',
             'class' => 'two-columns',
-            'cp_badge' => true,
             'cp_css' => 'column-count: 2; column-gap: 1em',
-            'cp_badge' => false,
+            'cp_badge' => true,
         ],
 
         'three_columns' => [
@@ -86,8 +85,8 @@ return [
             'name' => 'Three Columns',
             'ident' => '❙❙❙',
             'class' => 'three-columns',
-            'cp_badge' => true,
             'cp_css' => 'column-count: 3; column-gap: 1em',
+            'cp_badge' => true,
         ],
 
     ],
@@ -126,30 +125,25 @@ return [
     */
 
     'attributes' => [
+
         'heading' => [
             'id' => [
                 'display' => 'ID',
                 'type' => 'text',
-                'default' => 'default-heading-id',
-            ],
-            'class' => [
-                'display' => 'Class',
-                'type' => 'text',
             ],
         ],
-        'paragraph' => [
-            'id' => [
-                'display' => 'ID',
-                'type' => 'text',
-                'default' => 'default-paragraph-id',
-            ],
-        ],
+
         'orderedList' => [
             'start' => [
                 'display' => 'Start',
                 'type' => 'text',
             ],
+            'reversed' => [
+                'display' => 'Reversed',
+                'type' => 'toggle',
+            ],
         ],
+
     ],
 
     /*
