@@ -32,6 +32,7 @@ sections:
             - bts_attrs
             - anchor
             - action
+            - horizontalrule
           save_html: false
           inline: false
           toolbar_mode: fixed

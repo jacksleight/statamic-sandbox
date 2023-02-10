@@ -83,7 +83,7 @@ return [
             'ident' => '❙ ❙',
             'icon' => null,
             'class' => 'two-columns',
-            'cp_css' => 'column-count: 2; column-gap: 1em',
+            'cp_css' => 'column-count: 2; column-gap: 16px',
             'cp_badge' => true,
         ],
 
@@ -93,18 +93,18 @@ return [
             'ident' => '❙❙❙',
             'icon' => null,
             'class' => 'three-columns',
-            'cp_css' => 'column-count: 3; column-gap: 1em',
+            'cp_css' => 'column-count: 3; column-gap: 16px',
             'cp_badge' => true,
         ],
 
         'hint' => [
             'type' => 'div',
-            'name' => 'Hint',
+            'name' => 'Important Hint',
             'ident' => '✱',
             'icon' => 'square-solid',
             'class' => 'hint',
             'cp_css' => [
-                '&' => 'background: #e4ebf1; padding: 0.85em',
+                '&' => 'background: #e4ebf1; padding: 0.85em; border-radius: 2px',
                 '& h3' => 'font-size: 1em !important; margin-bottom: 0 !important',
                 '& h3::before' => 'content: "✱ "; color: #ff269e',
                 '& p' => 'margin-bottom: 0 !important; font-size: 0.8em !important',
