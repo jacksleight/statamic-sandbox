@@ -28,7 +28,7 @@ sections:
             - anchor
             - image
             - table
-            - hero
+            - title
             - intro
             - brand
             - two_columns

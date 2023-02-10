@@ -1,0 +1,30 @@
+/* This is all you. */
+#statamic1 .publish-section-wrapper .publish-fields {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: white;
+  display: flex;
+}
+#statamic1 .publish-section-wrapper .publish-fields .form-group:not(:nth-child(6)) {
+  display: none;
+}
+#statamic1 .publish-section-wrapper .publish-fields .form-group {
+  padding: 0;
+  width: 968px;
+  height: 648px;
+  border: 1px solid red;
+  margin: auto;
+  display: flex;
+}
+#statamic1 .publish-section-wrapper .publish-fields .form-group .field-inner {
+  display: none;
+}
+#statamic1 .publish-section-wrapper .publish-fields .form-group > div {
+  width: 850px;
+  margin: auto;
+}
+#statamic1 .publish-section-wrapper .publish-fields .form-group > div .ProseMirror {
+  height: 460px;
+  overflow: auto;
+}

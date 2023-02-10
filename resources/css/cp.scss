@@ -1,0 +1,35 @@
+/* This is all you. */
+
+#statamic1 {
+    .publish-section-wrapper .publish-fields {
+        position: fixed;
+        inset: 0;
+        z-index: 1;
+        background: white;
+        display: flex;
+        .form-group:not(:nth-child(6)) {
+            display: none;
+        }
+        .form-group {
+            padding: 0;
+            width: calc((1210px / 125) * 100);
+            height: calc((810px / 125) * 100);
+            border: 1px solid red;
+            margin: auto;
+            display: flex;
+            .field-inner {
+                display: none;
+            }
+            > div {
+                width: 850px;
+                margin: auto;
+                .ProseMirror {
+                    height: 460px;
+                    overflow: auto;
+                }
+            }
+        }
+    }
+}
+
+// zoom 125%

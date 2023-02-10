@@ -6,13 +6,13 @@ bard_field:
   -
     type: heading
     attrs:
-      class: hero-heading
+      class: title
       id: null
       level: 1
     content:
       -
         type: text
-        text: 'Hero Heading (blue)'
+        text: 'Title (blue)'
   -
     type: paragraph
     attrs:
@@ -20,7 +20,22 @@ bard_field:
     content:
       -
         type: text
-        text: 'Introduction (green) Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
+        text: 'Introduction (green) Lorem ipsum '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              class: action
+              href: '123'
+              rel: null
+              target: null
+              title: null
+        text: dolor
+      -
+        type: text
+        text: ' sit amet consectetur adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
   -
     type: paragraph
     attrs:
@@ -39,7 +54,22 @@ bard_field:
         text: 'consectetur adipisicing'
       -
         type: text
-        text: ' elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
+        text: ' elit. Tenetur, '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              class: action
+              href: '123'
+              rel: null
+              target: null
+              title: null
+        text: inventore
+      -
+        type: text
+        text: ' sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
   -
     type: bulletList
     attrs:
@@ -178,18 +208,18 @@ bard_field:
             type: text
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1675871247
+updated_at: 1676030806
 bard_field_menu:
   -
     type: heading
     attrs:
-      class: hero-heading
+      class: title
       id: null
       level: 1
     content:
       -
         type: text
-        text: 'Hero Heading (blue)'
+        text: 'Title (blue)'
   -
     type: paragraph
     attrs:

@@ -17,7 +17,7 @@ sections:
           previews: true
           smart_typography: false
           buttons:
-            - hero
+            - title
             - h1
             - h2
             - h3
@@ -60,7 +60,7 @@ sections:
           smart_typography: false
           buttons:
             - bts_menu
-            - hero
+            - title
             - h1
             - h2
             - h3
@@ -94,13 +94,12 @@ sections:
           instructions_position: above
           visibility: visible
           bts_menu:
-            - hero
+            - title
             - intro
             - brand
             - action
             - square_list
             - roman_list
-            - h1
             - h2
             - h3
             - h4

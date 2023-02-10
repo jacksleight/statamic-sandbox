@@ -1,0 +1,257 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: bard_field_menu
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - bts_menu
+            - title
+            - h1
+            - h2
+            - h3
+            - intro
+            - brand
+            - unorderedlist
+            - square_list
+            - orderedlist
+            - roman_list
+            - bold
+            - italic
+            - anchor
+            - action
+            - image
+            - table
+            - alignleft
+            - aligncenter
+            - alignright
+            - removeformat
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Bard Field Menu'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          bts_menu:
+            - bts_menu
+            - title
+            - h1
+            - h2
+            - h3
+            - intro
+            - brand
+            - unorderedlist
+            - square_list
+            - orderedlist
+            - roman_list
+            - bold
+            - italic
+            - anchor
+            - action
+            - image
+            - table
+            - alignleft
+            - aligncenter
+            - alignright
+            - removeformat
+          container: assets
+      -
+        handle: bard_field_attrs
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - h1
+            - h2
+            - h3
+            - unorderedlist
+            - orderedlist
+            - bold
+            - italic
+            - anchor
+            - action
+            - image
+            - table
+            - alignleft
+            - aligncenter
+            - alignright
+            - removeformat
+            - bts_attrs
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Bard Field Menu'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          container: assets
+      -
+        handle: bard_field_div
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - h1
+            - h2
+            - h3
+            - bold
+            - italic
+            - anchor
+            - image
+            - table
+            - two_columns
+            - three_columns
+            - removeformat
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Bard Field Menu'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          container: assets
+      -
+        handle: bard_field_link
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - h1
+            - h2
+            - h3
+            - unorderedlist
+            - square_list
+            - orderedlist
+            - roman_list
+            - bold
+            - italic
+            - anchor
+            - action
+            - alignleft
+            - aligncenter
+            - alignright
+            - removeformat
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Bard Field Menu'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          container: assets
+      -
+        handle: bard_field_css
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - title
+            - h1
+            - h2
+            - h3
+            - intro
+            - bold
+            - italic
+            - anchor
+            - image
+            - table
+            - hint
+            - removeformat
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Bard Field Menu'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          container: assets
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+title: 'Texstyle Demo'
