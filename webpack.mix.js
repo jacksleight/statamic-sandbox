@@ -13,6 +13,9 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/site.js', 'public/js')
 
+mix.js('resources/js/cp.js', 'public/vendor/app/js')
+   .css('resources/css/cp.css', 'public/vendor/app/css');
+
 mix.postCss('resources/css/tailwind.css', 'public/css', [
     require('postcss-import'),
     require('tailwindcss/nesting'),
