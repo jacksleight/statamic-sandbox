@@ -33,6 +33,9 @@ sections:
             - anchor
             - action
             - horizontalrule
+            - bts_styles
+            - bts_attributes
+            - bold
           save_html: false
           inline: false
           toolbar_mode: fixed
@@ -75,6 +78,8 @@ sections:
             - three_columns
             - anchor
             - action
+            - bts_styles
+            - bts_attributes
           save_html: false
           inline: false
           toolbar_mode: fixed
@@ -108,6 +113,14 @@ sections:
             - h6
             - unorderedlist
             - orderedlist
+          bts_styles:
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - title
   sidebar:
     display: Sidebar
     fields:

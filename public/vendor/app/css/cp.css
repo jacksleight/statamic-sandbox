@@ -1,15 +1,15 @@
 /* This is all you. */
-#statamic .publish-section-wrapper .publish-fields {
+#statamic1 .publish-section-wrapper .publish-fields {
   position: fixed;
   inset: 0;
   z-index: 1;
   background: white;
   display: flex;
 }
-#statamic .publish-section-wrapper .publish-fields .form-group:not(:nth-child(6)) {
+#statamic1 .publish-section-wrapper .publish-fields .form-group:not(:nth-child(6)) {
   display: none;
 }
-#statamic .publish-section-wrapper .publish-fields .form-group {
+#statamic1 .publish-section-wrapper .publish-fields .form-group {
   padding: 0;
   width: 968px;
   height: 648px;
@@ -17,14 +17,14 @@
   margin: auto;
   display: flex;
 }
-#statamic .publish-section-wrapper .publish-fields .form-group .field-inner {
+#statamic1 .publish-section-wrapper .publish-fields .form-group .field-inner {
   display: none;
 }
-#statamic .publish-section-wrapper .publish-fields .form-group > div {
+#statamic1 .publish-section-wrapper .publish-fields .form-group > div {
   width: 850px;
   margin: auto;
 }
-#statamic .publish-section-wrapper .publish-fields .form-group > div .ProseMirror {
+#statamic1 .publish-section-wrapper .publish-fields .form-group > div .ProseMirror {
   height: 470px;
   overflow: auto;
 }

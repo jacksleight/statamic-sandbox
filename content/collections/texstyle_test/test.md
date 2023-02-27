@@ -7,7 +7,7 @@ bard_field:
     type: heading
     attrs:
       class: title
-      id: null
+      id: '123'
       level: 1
     content:
       -
@@ -17,14 +17,69 @@ bard_field:
     type: paragraph
     attrs:
       class: introduction
+      id: null
     content:
       -
         type: text
-        text: 'Introduction (green) Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
+        text: 'Introduction (green) Lorem '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              class: null
+              href: '123'
+              rel: null
+              target: null
+              title: 'link title'
+          -
+            type: bold
+            attrs:
+              title: 'bold title'
+        text: ipsum
+      -
+        type: text
+        text: ' dolor sit '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+            attrs:
+              title: abc
+        text: 'amet '
+      -
+        type: text
+        text: 'consectetur adipisicing elit. Tenetur, inventore sapiente! Expedita '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              class: null
+              href: '123'
+              rel: null
+              target: null
+              title: null
+        text: nost
+      -
+        type: text
+        marks:
+          -
+            type: bold
+            attrs:
+              title: null
+        text: rum
+      -
+        type: text
+        text: ' cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
   -
     type: paragraph
     attrs:
       class: null
+      id: null
     content:
       -
         type: text
@@ -52,6 +107,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -63,6 +119,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -74,6 +131,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -85,6 +143,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -103,6 +162,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -114,6 +174,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -125,6 +186,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -136,6 +198,7 @@ bard_field:
             type: paragraph
             attrs:
               class: null
+              id: null
             content:
               -
                 type: text
@@ -149,6 +212,7 @@ bard_field:
         type: paragraph
         attrs:
           class: null
+          id: null
         content:
           -
             type: text
@@ -157,6 +221,7 @@ bard_field:
         type: paragraph
         attrs:
           class: null
+          id: null
         content:
           -
             type: text
@@ -165,6 +230,7 @@ bard_field:
         type: paragraph
         attrs:
           class: null
+          id: null
         content:
           -
             type: text
@@ -173,12 +239,13 @@ bard_field:
         type: paragraph
         attrs:
           class: null
+          id: null
         content:
           -
             type: text
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1676044844
+updated_at: 1676475747
 bard_field_menu:
   -
     type: heading

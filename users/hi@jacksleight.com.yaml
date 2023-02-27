@@ -6,3 +6,6 @@ preferences:
   collections:
     texstyle_test:
       after_save: continue_editing
+  assets:
+    assets:
+      mode: grid

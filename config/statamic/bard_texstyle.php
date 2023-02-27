@@ -158,6 +158,15 @@ return [
             ],
         ],
 
+        'bold' => [
+            'title' => [
+                'type' => 'text',
+                'display' => 'Title',
+                'default' => null,
+                'rendered' => true,
+            ],
+        ],
+
         'orderedList' => [
             'start' => [
                 'type' => 'text',
