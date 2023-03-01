@@ -105,7 +105,7 @@ return [
     |
     */
 
-    'theme' => env('STATAMIC_THEME', 'rad'),
+    'theme' => env('STATAMIC_THEME', 'lazy-logo'),
 
     /*
     |--------------------------------------------------------------------------
@@ -120,10 +120,13 @@ return [
 
     'custom_cms_name' => env('STATAMIC_CUSTOM_CMS_NAME', 'Statamic'),
 
-    'custom_logo_url' => env('STATAMIC_CUSTOM_LOGO_URL', '/cp/lazy-logo.svg'),
+    'custom_logo_url' => [
+        'nav' => '/cp/lazy-logo/nav.svg',
+        'outside' => '/cp/lazy-logo/outside.svg',
+    ],
 
     'custom_favicon_url' => env('STATAMIC_CUSTOM_FAVICON_URL', null),
 
-    'custom_css_url' => env('STATAMIC_CUSTOM_CSS_URL', null),
+    'custom_css_url' => '/cp/lazy-logo/cp.css',
 
 ];
