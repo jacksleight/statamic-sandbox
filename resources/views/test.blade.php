@@ -1,0 +1,3 @@
+@php
+distill($page);
+@endphp
