@@ -4,7 +4,7 @@ blueprint: pages
 title: Test
 author: f35721f8-8c4c-4e40-a119-10a6ac6e1447
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1677851612
+updated_at: 1677856578
 template: test
 replicator_field:
   -
@@ -23,7 +23,13 @@ bard_field:
     content:
       -
         type: text
-        text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt totam veritatis dolorem, necessitatibus molestiae facilis quis culpa '
+        marks:
+          -
+            type: bold
+        text: Lorem
+      -
+        type: text
+        text: ' ipsum dolor sit amet consectetur, adipisicing elit. Incidunt totam veritatis dolorem, necessitatibus molestiae facilis quis culpa '
       -
         type: text
         marks:

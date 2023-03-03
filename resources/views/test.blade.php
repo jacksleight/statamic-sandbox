@@ -1,3 +1,3 @@
 @php
-distill($page);
+JackSleight\StatamicDistill\distill($page);
 @endphp
