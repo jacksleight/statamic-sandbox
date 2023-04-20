@@ -22,6 +22,10 @@
     </header>
     <img class="rounded-xl" src="{{ $hero_image }}" alt="{{ $hero_image:alt }}">
     <section class="max-w-3xl mx-auto py-6 lg:py-12 content">
+        {{ headings = main_content | raw | bard_items | where('type', 'heading') }}
+        {{ headings }}
+            <a href="#{{ content | bard_text | slugify }}">{{ content | bard_html }}</a>
+        {{ /headings }}
         {{ main_content }}
             {{ if $type == "text" }}
                 {{ $text }}
