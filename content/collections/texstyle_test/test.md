@@ -7,7 +7,7 @@ bard_field:
     type: heading
     attrs:
       class: title
-      id: '123'
+      hero: null
       level: 1
     content:
       -
@@ -17,69 +17,25 @@ bard_field:
     type: paragraph
     attrs:
       class: introduction
-      id: null
     content:
       -
         type: text
-        text: 'Introduction (green) Lorem '
+        text: 'Introduction (green) Lorem ipsum dolor sit amet '
       -
         type: text
         marks:
           -
-            type: link
+            type: btsSpan
             attrs:
-              class: null
-              href: '123'
-              rel: null
-              target: null
-              title: 'link title'
-          -
-            type: bold
-            attrs:
-              title: 'bold title'
-        text: ipsum
+              class: brand-text
+        text: consectetur
       -
         type: text
-        text: ' dolor sit '
-      -
-        type: text
-        marks:
-          -
-            type: bold
-            attrs:
-              title: abc
-        text: 'amet '
-      -
-        type: text
-        text: 'consectetur adipisicing elit. Tenetur, inventore sapiente! Expedita '
-      -
-        type: text
-        marks:
-          -
-            type: link
-            attrs:
-              class: null
-              href: '123'
-              rel: null
-              target: null
-              title: null
-        text: nost
-      -
-        type: text
-        marks:
-          -
-            type: bold
-            attrs:
-              title: null
-        text: rum
-      -
-        type: text
-        text: ' cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
+        text: ' adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
   -
     type: paragraph
     attrs:
       class: null
-      id: null
     content:
       -
         type: text
@@ -107,7 +63,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -119,7 +74,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -131,7 +85,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -143,7 +96,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -152,6 +104,7 @@ bard_field:
     type: orderedList
     attrs:
       class: roman-list
+      list_style_type: null
       start: 5
       reversed: null
     content:
@@ -162,7 +115,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -174,7 +126,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -186,7 +137,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -198,7 +148,6 @@ bard_field:
             type: paragraph
             attrs:
               class: null
-              id: null
             content:
               -
                 type: text
@@ -212,7 +161,6 @@ bard_field:
         type: paragraph
         attrs:
           class: null
-          id: null
         content:
           -
             type: text
@@ -221,7 +169,6 @@ bard_field:
         type: paragraph
         attrs:
           class: null
-          id: null
         content:
           -
             type: text
@@ -230,7 +177,6 @@ bard_field:
         type: paragraph
         attrs:
           class: null
-          id: null
         content:
           -
             type: text
@@ -239,13 +185,12 @@ bard_field:
         type: paragraph
         attrs:
           class: null
-          id: null
         content:
           -
             type: text
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1676475747
+updated_at: 1683902256
 bard_field_menu:
   -
     type: heading
@@ -436,4 +381,5 @@ bard_field_menu:
           -
             type: text
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
+bard_field_html: '<h1 class="title">Title (blue)</h1><p class="introduction">Introduction (green) Lorem ipsum dolor sit amet <span class="brand-text">consectetur</span> adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.</p><p class="paragraph">Default (red) ipsum dolor sit amet <span class="brand-text">consectetur adipisicing</span> elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.</p><ul class="square-list"><li><p class="paragraph">Square List</p></li><li><p class="paragraph">Some</p></li><li><p class="paragraph">More</p></li><li><p class="paragraph">Items</p></li></ul><ol class="roman-list" style="list-style-type: ;" start="5"><li><p class="paragraph">Roman List</p></li><li><p class="paragraph">Some</p></li><li><p class="paragraph">More</p></li><li><p class="paragraph">Items</p></li></ol><div class="two-columns"><p class="paragraph">Two columns lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.</p><p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.</p><p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.</p><p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.</p></div>'
 ---

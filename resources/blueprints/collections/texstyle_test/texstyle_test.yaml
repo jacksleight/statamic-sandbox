@@ -20,6 +20,8 @@ tabs:
               previews: true
               smart_typography: false
               buttons:
+                - bts_styles
+                - bts_attributes
                 - title
                 - h1
                 - h2
@@ -32,12 +34,9 @@ tabs:
                 - roman_list
                 - two_columns
                 - three_columns
-                - bts_attrs
                 - anchor
                 - action
                 - horizontalrule
-                - bts_styles
-                - bts_attributes
                 - bold
               save_html: false
               inline: false
@@ -58,15 +57,28 @@ tabs:
               listable: hidden
               instructions_position: above
               visibility: visible
+              bts_styles_button: text
+              bts_styles:
+                - h1
+                - h2
+                - h3
+                - h4
+                - h5
+                - h6
+                - title
+                - square_list
+                - roman_list
+                - brand
           -
-            handle: bard_field_menu
+            handle: bard_field_html
             field:
               collapse: false
               always_show_set_button: false
               previews: true
               smart_typography: false
               buttons:
-                - bts_menu
+                - bts_styles
+                - bts_attributes
                 - title
                 - h1
                 - h2
@@ -81,9 +93,9 @@ tabs:
                 - three_columns
                 - anchor
                 - action
-                - bts_styles
-                - bts_attributes
-              save_html: false
+                - horizontalrule
+                - bold
+              save_html: true
               inline: false
               toolbar_mode: fixed
               link_noopener: false
@@ -96,26 +108,13 @@ tabs:
               enable_paste_rules: true
               antlers: false
               remove_empty_nodes: false
-              display: 'Bard Field Menu'
+              display: 'Bard Field (Save HTML)'
               type: bard
               icon: bard
               listable: hidden
               instructions_position: above
               visibility: visible
-              bts_menu:
-                - title
-                - intro
-                - brand
-                - action
-                - square_list
-                - roman_list
-                - h2
-                - h3
-                - h4
-                - h5
-                - h6
-                - unorderedlist
-                - orderedlist
+              bts_styles_button: text
               bts_styles:
                 - h1
                 - h2
@@ -127,53 +126,6 @@ tabs:
                 - square_list
                 - roman_list
                 - brand
-              sets:
-                main:
-                  display: Main
-                  instructions: null
-                  icon: null
-                  sets: {  }
-              bts_styles_button: text
-              hide_display: false
-          -
-            handle: bard_field_basic
-            field:
-              buttons:
-                - h2
-                - h3
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - removeformat
-                - quote
-                - anchor
-                - image
-                - table
-                - h1
-                - bts_attributes
-              smart_typography: false
-              save_html: true
-              inline: false
-              toolbar_mode: fixed
-              reading_time: false
-              fullscreen: true
-              allow_source: true
-              enable_input_rules: true
-              enable_paste_rules: true
-              remove_empty_nodes: false
-              antlers: false
-              link_noopener: false
-              link_noreferrer: false
-              target_blank: false
-              bts_styles_button: icon
-              type: bard
-              display: 'Bard Field Basic'
-              icon: bard
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              hide_display: false
   sidebar:
     display: Sidebar
     sections:
