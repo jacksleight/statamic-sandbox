@@ -134,7 +134,32 @@ return [
             //     5 => 'heading-5',
             //     6 => 'heading-6',
             // ],
-            'paragraph' => 'paragraph',
+            'paragraph' => [
+                'class' => 'paragraph',
+                'cp_css' => 'color: red',
+            ],
+            'horizontal_rule' => [
+                'class' => 'rule',
+                'cp_css' => 'border: 2px solid dodgerblue',
+            ],
+        ],
+        'article' => [
+            // 'heading' => [
+            //     1 => 'heading-1',
+            //     2 => 'heading-2',
+            //     3 => 'heading-3',
+            //     4 => 'heading-4',
+            //     5 => 'heading-5',
+            //     6 => 'heading-6',
+            // ],
+            'paragraph' => [
+                'class' => 'paragraph',
+                'cp_css' => 'color: red; font-weight: bold',
+            ],
+            'horizontal_rule' => [
+                'class' => 'rule',
+                'cp_css' => 'border: 4px solid dodgerblue',
+            ],
         ],
     ],
 
@@ -149,12 +174,15 @@ return [
 
     'attributes' => [
 
-        'heading' => [
-            'id' => [
-                'type' => 'text',
-                'display' => 'ID',
+        'heading_1' => [
+            'hero' => [
+                'type' => 'toggle',
+                'display' => 'Hero',
                 'default' => null,
-                'rendered' => true,
+                'rendered' => 'class',
+                'values' => [
+                    'true' => 'hero',
+                ],
             ],
         ],
 
@@ -168,6 +196,12 @@ return [
         ],
 
         'orderedList' => [
+            'list_style_type' => [
+                'type' => 'text',
+                'display' => 'Type',
+                'default' => null,
+                'rendered' => 'style',
+            ],
             'start' => [
                 'type' => 'text',
                 'display' => 'Start',

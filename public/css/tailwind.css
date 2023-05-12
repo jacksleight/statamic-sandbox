@@ -1270,6 +1270,10 @@ pre > code .token.content > blockquote {
   border-radius: 0.75rem !important;
 }
 
+.border {
+  border-width: 1px !important;
+}
+
 .border-b-2 {
   border-bottom-width: 2px !important;
 }

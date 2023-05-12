@@ -1,30 +1,30 @@
 /* This is all you. */
-#statamic1 .publish-section-wrapper .publish-fields {
+#statamic1 .publish-tab-wrapper .publish-fields {
   position: fixed;
   inset: 0;
   z-index: 1;
   background: white;
   display: flex;
 }
-#statamic1 .publish-section-wrapper .publish-fields .form-group:not(:nth-child(6)) {
+#statamic1 .publish-tab-wrapper .publish-fields .form-group:not(:nth-child(3)) {
   display: none;
 }
-#statamic1 .publish-section-wrapper .publish-fields .form-group {
+#statamic1 .publish-tab-wrapper .publish-fields .form-group {
   padding: 0;
-  width: 968px;
-  height: 648px;
+  width: 961.6px !important;
+  height: 641.6px !important;
   border: 1px solid red;
   margin: auto;
   display: flex;
 }
-#statamic1 .publish-section-wrapper .publish-fields .form-group .field-inner {
+#statamic1 .publish-tab-wrapper .publish-fields .form-group .field-inner {
   display: none;
 }
-#statamic1 .publish-section-wrapper .publish-fields .form-group > div {
-  width: 850px;
+#statamic1 .publish-tab-wrapper .publish-fields .form-group > div {
+  width: 801px;
   margin: auto;
 }
-#statamic1 .publish-section-wrapper .publish-fields .form-group > div .ProseMirror {
-  height: 470px;
+#statamic1 .publish-tab-wrapper .publish-fields .form-group > div .ProseMirror {
+  height: 401px;
   overflow: auto;
 }

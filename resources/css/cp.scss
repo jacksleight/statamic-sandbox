@@ -1,19 +1,19 @@
 /* This is all you. */
 
 #statamic1 {
-    .publish-section-wrapper .publish-fields {
+    .publish-tab-wrapper .publish-fields {
         position: fixed;
         inset: 0;
         z-index: 1;
         background: white;
         display: flex;
-        .form-group:not(:nth-child(6)) {
+        .form-group:not(:nth-child(3)) {
             display: none;
         }
         .form-group {
             padding: 0;
-            width: calc((1210px / 125) * 100);
-            height: calc((810px / 125) * 100);
+            width: calc((1202px / 125) * 100) !important;
+            height: calc((802px / 125) * 100) !important;
             border: 1px solid red;
             margin: auto;
             display: flex;
@@ -21,10 +21,10 @@
                 display: none;
             }
             > div {
-                width: 850px;
+                width: 801px;
                 margin: auto;
                 .ProseMirror {
-                    height: 470px;
+                    height: 401px;
                     overflow: auto;
                 }
             }
