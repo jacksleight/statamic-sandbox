@@ -8,6 +8,7 @@ bard_field:
     attrs:
       class: title
       hero: null
+      start: null
       level: 1
     content:
       -
@@ -32,6 +33,13 @@ bard_field:
       -
         type: text
         text: ' adipisicing elit. Tenetur, inventore sapiente! Expedita nostrum cupiditate illum sequi nemo aperiam facere saepe, explicabo quas. Molestiae dolorum, nihil nobis iure laudantium quod obcaecati.'
+      -
+        type: btsPin
+        attrs:
+          id: m8rk48ro
+          values:
+            note: 'Introduction (green) Lorem ipsum.'
+            type: footnote
   -
     type: paragraph
     attrs:
@@ -165,6 +173,13 @@ bard_field:
           -
             type: text
             text: 'Two columns lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
+          -
+            type: btsPin
+            attrs:
+              id: m8rk4mts
+              values:
+                note: 'Introduction (green) Lorem ipsum'
+                type: footnote
       -
         type: paragraph
         attrs:
@@ -190,7 +205,7 @@ bard_field:
             type: text
             text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita amet molestias culpa sapiente, et quos iste at praesentium assumenda vero modi fugiat tempore dolores nostrum, soluta eaque. Possimus, modi incidunt.'
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1683902256
+updated_at: 1743092270
 bard_field_menu:
   -
     type: heading

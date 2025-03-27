@@ -1125,9 +1125,9 @@ pre > code .token.content > blockquote {
   margin-bottom: 3rem !important;
 }
 
-.my-4 {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
+.my-8 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .mb-16 {
@@ -1471,10 +1471,6 @@ pre > code .token.content > blockquote {
 
 .uppercase {
   text-transform: uppercase !important;
-}
-
-.italic {
-  font-style: italic !important;
 }
 
 .leading-none {

@@ -3,6 +3,11 @@
     <div class="content [counter-reset:footnote]">
         {{ bard_field }}
     </div>
+    <ol class="list-decimal">
+        {{ pins:bard_field type="footnote" }}
+            <li id="fn-{{ id }}">{{ note }}</li>
+        {{ /pins:bard_field }}
+    </ol>
 
 </article>
 
