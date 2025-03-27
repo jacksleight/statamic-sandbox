@@ -877,7 +877,7 @@ pre > code .token.inserted {
   font-size: 1.125rem;
   line-height: 1.75rem;
   line-height: 1.625;
-        margin-bottom: 2em;
+        margin-bottom: 2rem;
 }
 
 .content > p:first-of-type {
@@ -1105,6 +1105,11 @@ pre > code .token.content > blockquote {
   margin: 0px !important;
 }
 
+.mx-12 {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+
 .mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -1118,6 +1123,11 @@ pre > code .token.content > blockquote {
 .my-12 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
+}
+
+.my-4 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 .mb-16 {
@@ -1160,6 +1170,10 @@ pre > code .token.content > blockquote {
   display: block !important;
 }
 
+.inline-block {
+  display: inline-block !important;
+}
+
 .flex {
   display: flex !important;
 }
@@ -1188,6 +1202,10 @@ pre > code .token.content > blockquote {
   height: 1.5rem !important;
 }
 
+.h-\[1em\] {
+  height: 1em !important;
+}
+
 .h-full {
   height: 100% !important;
 }
@@ -1198,6 +1216,10 @@ pre > code .token.content > blockquote {
 
 .w-6 {
   width: 1.5rem !important;
+}
+
+.w-\[1em\] {
+  width: 1em !important;
 }
 
 .w-full {
@@ -1222,6 +1244,10 @@ pre > code .token.content > blockquote {
 
 .flex-1 {
   flex: 1 1 0% !important;
+}
+
+.list-decimal {
+  list-style-type: decimal !important;
 }
 
 .grid-cols-1 {
@@ -1297,6 +1323,11 @@ pre > code .token.content > blockquote {
   background-color: rgb(229 231 235 / var(--tw-bg-opacity)) !important;
 }
 
+.bg-hot-pink {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(253 45 120 / var(--tw-bg-opacity)) !important;
+}
+
 .bg-white {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
@@ -1319,6 +1350,11 @@ pre > code .token.content > blockquote {
 .bg-clip-text {
   -webkit-background-clip: text !important;
           background-clip: text !important;
+}
+
+.px-1 {
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
 }
 
 .px-2 {
@@ -1387,6 +1423,10 @@ pre > code .token.content > blockquote {
   text-align: center !important;
 }
 
+.align-super {
+  vertical-align: super !important;
+}
+
 .font-body {
   font-family: var(--font-body) !important;
 }
@@ -1431,6 +1471,10 @@ pre > code .token.content > blockquote {
 
 .uppercase {
   text-transform: uppercase !important;
+}
+
+.italic {
+  font-style: italic !important;
 }
 
 .leading-none {
@@ -1499,6 +1543,19 @@ pre > code .token.content > blockquote {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.\[counter-increment\:footnote\] {
+  counter-increment: footnote;
+}
+
+.\[counter-reset\:footnote\] {
+  counter-reset: footnote;
+}
+
+.before\:content-\[counter\(footnote\)\]::before {
+  --tw-content: counter(footnote) !important;
+  content: var(--tw-content) !important;
 }
 
 .hover\:-top-2:hover {

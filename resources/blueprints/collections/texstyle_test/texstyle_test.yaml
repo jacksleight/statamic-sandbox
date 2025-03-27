@@ -15,67 +15,50 @@ tabs:
           -
             handle: bard_field
             field:
-              collapse: false
-              always_show_set_button: false
-              previews: true
-              smart_typography: false
               buttons:
-                - bts_styles
-                - bts_attributes
-                - title
                 - h1
                 - h2
-                - h3
-                - intro
-                - brand
-                - unorderedlist
-                - orderedlist
-                - square_list
-                - roman_list
-                - two_columns
-                - three_columns
+                - italic
                 - anchor
-                - action
-                - horizontalrule
-                - bold
-              save_html: false
-              inline: false
-              toolbar_mode: fixed
-              link_noopener: false
-              link_noreferrer: false
-              target_blank: false
-              reading_time: false
-              fullscreen: true
-              allow_source: true
-              enable_input_rules: true
-              enable_paste_rules: true
-              antlers: false
+                - table
+                - branded
+                - bts_attributes
+                - bts_pins
               remove_empty_nodes: false
               display: 'Bard Field'
               type: bard
-              icon: bard
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              bts_styles_button: text
-              bts_styles:
+              link_collections:
+                - pages
+              container: assets
+              bts_pins:
+                - icon
+                - footnote
+                - date
+          -
+            handle: bard_field_duplicate
+            field:
+              buttons:
                 - h1
                 - h2
-                - h3
-                - h4
-                - h5
-                - h6
-                - title
-                - square_list
-                - roman_list
-                - brand
+                - italic
+                - anchor
+                - table
+                - branded
+                - bts_attributes
+                - bts_pins
+              remove_empty_nodes: false
+              display: 'Bard Field (Duplicate)'
+              type: bard
+              link_collections:
+                - pages
+              container: assets
+              bts_pins:
+                - icon
+                - footnote
+                - date
           -
             handle: bard_field_html
             field:
-              collapse: false
-              always_show_set_button: false
-              previews: true
-              smart_typography: false
               buttons:
                 - bts_styles
                 - bts_attributes
@@ -96,24 +79,10 @@ tabs:
                 - horizontalrule
                 - bold
               save_html: true
-              inline: false
-              toolbar_mode: fixed
-              link_noopener: false
-              link_noreferrer: false
-              target_blank: false
-              reading_time: false
-              fullscreen: true
-              allow_source: true
-              enable_input_rules: true
-              enable_paste_rules: true
-              antlers: false
               remove_empty_nodes: false
               display: 'Bard Field (Save HTML)'
               type: bard
-              icon: bard
-              listable: hidden
-              instructions_position: above
-              visibility: visible
+              visibility: hidden
               bts_styles_button: text
               bts_styles:
                 - h1
@@ -126,6 +95,40 @@ tabs:
                 - square_list
                 - roman_list
                 - brand
+              placeholder: Example
+          -
+            handle: page_builder
+            field:
+              type: replicator
+              display: 'Page Builder'
+              sets:
+                new_set_group:
+                  display: 'New Set Group'
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      fields:
+                        -
+                          handle: bard_field
+                          field:
+                            buttons:
+                              - h2
+                              - h3
+                              - bold
+                              - italic
+                              - unorderedlist
+                              - orderedlist
+                              - removeformat
+                              - quote
+                              - anchor
+                              - image
+                              - table
+                              - bts_pins
+                            remove_empty_nodes: false
+                            bts_pins:
+                              - footnote
+                            type: bard
+                            display: 'Bard Field'
   sidebar:
     display: Sidebar
     sections:
@@ -137,4 +140,4 @@ tabs:
               type: slug
               localizable: true
               validate:
-                - 'unique_entry_value:{collection},{id},{site}'
+                - 'new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})'

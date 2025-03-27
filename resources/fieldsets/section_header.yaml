@@ -1,0 +1,28 @@
+title: 'Section header'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      instructions: 'Fill in the title.'
+      validate:
+        - string
+      localizable: true
+  -
+    handle: text
+    field:
+      remove_empty_nodes: false
+      type: bard
+      display: Text
+      instructions: 'Fill in the text.'
+      buttons:
+        - bold
+        - underline
+        - italic
+        - anchor
+        - removeformat
+        - bigger_text
+      save_html: true
+      fullscreen: false
+      localizable: true

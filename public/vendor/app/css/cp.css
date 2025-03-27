@@ -6,7 +6,7 @@
   background: white;
   display: flex;
 }
-#statamic1 .publish-tab-wrapper .publish-fields .form-group:not(:nth-child(3)) {
+#statamic1 .publish-tab-wrapper .publish-fields .form-group:not(:nth-child(7)) {
   display: none;
 }
 #statamic1 .publish-tab-wrapper .publish-fields .form-group {

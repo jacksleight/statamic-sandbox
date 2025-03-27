@@ -15,38 +15,26 @@ tabs:
           -
             handle: intro
             field:
-              always_show_set_button: false
               buttons:
                 - bold
                 - italic
+                - small
                 - removeformat
                 - anchor
-              save_html: true
-              toolbar_mode: fixed
-              link_noopener: false
-              link_noreferrer: false
-              target_blank: false
-              reading_time: false
-              fullscreen: true
-              allow_source: true
+                - bts_attributes
               type: bard
-              listable: hidden
               display: Intro
           -
             handle: hero_image
             field:
               mode: grid
-              container: assets
               restrict: true
-              allow_uploads: true
               max_files: 1
               type: assets
-              listable: hidden
               display: 'Hero Image'
           -
             handle: main_content
             field:
-              always_show_set_button: false
               buttons:
                 - h1
                 - h2
@@ -66,45 +54,27 @@ tabs:
                 - strikethrough
                 - code
                 - codeblock
+                - horizontalrule
               container: assets
-              save_html: false
-              toolbar_mode: fixed
-              link_noopener: false
-              link_noreferrer: false
-              target_blank: false
               reading_time: true
-              fullscreen: true
-              allow_source: true
               type: bard
-              listable: hidden
               display: 'Main Content'
               sets:
-                code_block:
-                  display: 'Code Block'
-                  fields:
-                    -
-                      handle: code
-                      field:
-                        theme: material
-                        mode: php
-                        indent_type: tabs
-                        indent_size: 4
-                        key_map: default
-                        line_numbers: true
-                        line_wrapping: true
-                        type: code
-                        listable: hidden
-                        display: Code
-              instructions_position: above
-              visibility: visible
-              collapse: false
-              previews: true
-              smart_typography: false
-              inline: false
-              enable_input_rules: true
-              enable_paste_rules: true
-              antlers: false
-              remove_empty_nodes: false
+                main:
+                  display: Main
+                  sets:
+                    code_block:
+                      display: 'Code Block'
+                      fields:
+                        -
+                          handle: code
+                          field:
+                            mode: php
+                            type: code
+                            display: Code
+                    ddfdsf:
+                      display: ddfdsf
+                      fields: {  }
   sidebar:
     display: Sidebar
     sections:
@@ -117,7 +87,7 @@ tabs:
               localizable: true
               validate:
                 - required
-                - 'unique_entry_value:{collection},{id},{site}'
+                - 'new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})'
           -
             handle: date
             field:
@@ -130,7 +100,6 @@ tabs:
             handle: author
             field:
               max_items: 1
-              mode: select
               type: users
               listable: true
               display: Author

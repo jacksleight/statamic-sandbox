@@ -21,7 +21,8 @@
         </script>
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         {{ partial:personality }}
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/morph@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <script src="{{ mix src='/js/site.js' }}"></script>
     </head>
     <body class="bg-white text-black font-body leading-normal personality-{{ $settings:personality }}">
@@ -31,5 +32,48 @@
         </main>
         {{ partial:footer }}
         {{ partial:extras }}
+        {{ if live_preview }}
+            <script>
+                window.addEventListener('message', async (event) => {
+                    if (event.data.name === 'statamic.preview.updated') {
+                        const text = await fetch(event.data.url).then((res) => res.text());
+                        const updated = new DOMParser().parseFromString(text, 'text/html');
+                        Alpine.morph(document.body, updated.body);
+                    }
+                });
+            </script>
+        {{ /if }}
+        <style>
+            .title {
+                color: blue;
+            }
+            .introduction {
+                color: green;
+            }
+            .action {
+                background: pink;
+            }
+            .action {
+                background: pink;
+            }
+            .content > .paragraph {
+                color: red;
+            }
+            .square-list {
+                list-style-type: square !important;
+            }
+            .roman-list {
+                list-style-type: upper-roman !important;
+            }
+            .two-columns {
+                column-count: 2; column-gap: 1em;
+            }
+            .two-columns > * {
+                margin-bottom: 1rem;
+            }
+            .rule {
+                border: 1px solid black;
+            }
+        </style>
     </body>
 </html>

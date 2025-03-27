@@ -26,17 +26,47 @@ return [
 
         'intro' => [
             'type' => 'paragraph',
-            'name' => 'Introduction',
+            'name' => 'Bigger',
             'ident' => 'I',
             'icon' => null,
-            'class' => 'introduction',
-            'cp_css' => 'font-size: 1.25em; margin-top: -0.5em',
-            'cp_badge' => true,
+            'class' => 'text-2xl',
+            'cp_css' => 'font-size: 1.1em',
+            'cp_badge' => false,
+        ],
+
+        'bigger_text' => [
+            'type' => 'paragraph',
+            'name' => 'Bigger',
+            'ident' => 'T',
+            'icon' => null,
+            'class' => 'text-xl',
+            'cp_css' => 'font-weight: bold; font-size: 1.1em;',
+            'cp_badge' => false,
         ],
 
         'brand' => [
             'type' => 'span',
             'name' => 'Brand Text',
+            'ident' => 'B',
+            'icon' => 'alert-alarm-bell',
+            'class' => 'brand-text',
+            'cp_css' => 'color: #ff269e; font-weight: 700',
+            'cp_badge' => false,
+        ],
+
+        'comic' => [
+            'type' => 'span',
+            'name' => 'Comic Text',
+            'ident' => 'C',
+            'icon' => null,
+            'class' => 'comic-text',
+            'cp_css' => 'font-family: "Comic Sans MS", cursive',
+            'cp_badge' => false,
+        ],
+
+        'branded' => [
+            'type' => 'link',
+            'name' => 'Branded Link',
             'ident' => 'B',
             'icon' => null,
             'class' => 'brand-text',
@@ -116,51 +146,83 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Classes
+    | Pins (pro only)
     |--------------------------------------------------------------------------
     |
-    | Default classes that will be applied to elements with no style set. The
-    | standard set will be used if no set is selected in the field config.
+    |
     |
     */
 
-    'default_classes' => [
-        'standard' => [
-            // 'heading' => [
-            //     1 => 'heading-1',
-            //     2 => 'heading-2',
-            //     3 => 'heading-3',
-            //     4 => 'heading-4',
-            //     5 => 'heading-5',
-            //     6 => 'heading-6',
-            // ],
-            'paragraph' => [
-                'class' => 'paragraph',
-                'cp_css' => 'color: red',
-            ],
-            'horizontal_rule' => [
-                'class' => 'rule',
-                'cp_css' => 'border: 2px solid dodgerblue',
-            ],
-        ],
-        'article' => [
-            // 'heading' => [
-            //     1 => 'heading-1',
-            //     2 => 'heading-2',
-            //     3 => 'heading-3',
-            //     4 => 'heading-4',
-            //     5 => 'heading-5',
-            //     6 => 'heading-6',
-            // ],
-            'paragraph' => [
-                'class' => 'paragraph',
-                'cp_css' => 'color: red; font-weight: bold',
-            ],
-            'horizontal_rule' => [
-                'class' => 'rule',
-                'cp_css' => 'border: 4px solid dodgerblue',
+    'pins' => [
+
+        'icon' => [
+            'display' => 'Icon',
+            'icon' => 'plump/fire-flame-burn-hot',
+            'ident' => '3',
+            'instructions' => 'An icon graphic.',
+            'view' => 'icon-pin',
+            'fields' => [
+                'src' => [
+                    'display' => 'Icon',
+                    'type' => 'assets',
+                    'max_files' => 1,
+                    'mode' => 'list',
+                    'preview' => true,
+                ],
             ],
         ],
+
+        'date' => [
+            'display' => 'Date',
+            'icon' => 'plump/calendar-date',
+            'instructions' => 'Some date text.',
+            'fields' => [
+                'when' => [
+                    'display' => 'When',
+                    'type' => 'text',
+                    'default' => 'today',
+                    'validate' => ['required'],
+                    'preview' => true,
+                ],
+                'format' => [
+                    'display' => 'Format',
+                    'type' => 'text',
+                ],
+            ],
+        ],
+
+        'footnote' => [
+            'display' => 'Footnote',
+            'icon' => 'plump/mail-chat-bubble-text',
+            'instructions' => 'Some footnote text.',
+            'fields' => [
+                'note' => [
+                    'display' => 'Note',
+                    'type' => 'textarea',
+                ],
+            ],
+        ],
+
+        // 'user' => [
+        //     'display' => 'User',
+        //     'instructions' => 'Some user text.',
+        //     'fields' => [
+        //         'toggle' => [
+        //             'display' => 'Toggle',
+        //             'type' => 'toggle',
+        //         ],
+        //         'user' => [
+        //             'display' => 'User',
+        //             'mode' => 'select',
+        //             'type' => 'users',
+        //             'max_items' => 1,
+        //             'if' => [
+        //                 'toggle' => true,
+        //             ],
+        //         ],
+        //     ],
+        // ],
+
     ],
 
     /*
@@ -184,6 +246,12 @@ return [
                     'true' => 'hero',
                 ],
             ],
+            'start' => [
+                'type' => 'text',
+                'display' => 'Start',
+                'default' => null,
+                'rendered' => true,
+            ],
         ],
 
         'bold' => [
@@ -192,6 +260,14 @@ return [
                 'display' => 'Title',
                 'default' => null,
                 'rendered' => true,
+            ],
+        ],
+
+        'table' => [
+            'border' => [
+                'type' => 'text',
+                'display' => 'Border',
+                'rendered' => 'class',
             ],
         ],
 
@@ -215,6 +291,37 @@ return [
                 'rendered' => true,
             ],
         ],
+
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Defaults
+    |--------------------------------------------------------------------------
+    |
+    | Default styles that will be applied to elements with no style set. It's
+    | also possible configure multiple sets of defaults to use with different
+    | Bard fields, refer to the docs for more info.
+    |
+    */
+
+    'defaults' => [
+
+        // 'heading_1' => [
+        //     'class' => 'heading-1',
+        //     'cp_css' => null,
+        //     'cp_badge' => false,
+        // ],
+        // 'heading_2' => [
+        //     'class' => 'heading-2',
+        //     'cp_css' => null,
+        //     'cp_badge' => false,
+        // ],
+        // 'paragraph' => [
+        //     'class' => 'paragraph',
+        //     'cp_css' => null,
+        //     'cp_badge' => false,
+        // ],
 
     ],
 

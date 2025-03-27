@@ -36,7 +36,7 @@ bard_field_menu:
         type: text
         text: "Think about it, who wouldn't want to start their day with a sweet and satisfying bite of a warm and gooey donut? Or maybe you're more of a fan of the classic, old-fashioned donut with its crunchy exterior and soft interior. And let's not forget about the toppings. You can go for the classic and keep it simple with a sprinkle of powdered sugar or take it to the next level with toppings like bacon, cereal, or even donut ice cream sandwiches. The possibilities are endless!"
 updated_by: f35721f8-8c4c-4e40-a119-10a6ac6e1447
-updated_at: 1683038288
+updated_at: 1713955161
 bard_field_attrs:
   -
     type: heading
@@ -350,4 +350,75 @@ bard_field_css:
       -
         type: text
         text: "Think about it, who wouldn't want to start their day with a sweet and satisfying bite of a warm and gooey donut? Or maybe you're more of a fan of the classic, old-fashioned donut with its crunchy exterior and soft interior. And let's not forget about the toppings. You can go for the classic and keep it simple with a sprinkle of powdered sugar or take it to the next level with toppings like bacon, cereal, or even donut ice cream sandwiches. The possibilities are endless!"
+bard_field_pins:
+  -
+    type: heading
+    attrs:
+      bts_key: null
+      hero: null
+      start: null
+      level: 1
+    content:
+      -
+        type: btsPin
+        attrs:
+          id: lvdolq0a
+          values:
+            src: pizza.svg
+            type: icon
+      -
+        type: text
+        text: ' Everything is Better With Pizza'
+  -
+    type: paragraph
+    attrs:
+      bts_key: null
+    content:
+      -
+        type: text
+        text: "Oh yeah, let's talk about the round, sugary treats that make our taste buds do a happy dance - donuts! These delicious, fried rings"
+      -
+        type: btsPin
+        attrs:
+          id: lvdomcql
+          values:
+            note:
+              -
+                type: paragraph
+                attrs:
+                  bts_key: null
+                content:
+                  -
+                    type: text
+                    text: 'You can go for the classic and keep it simple.'
+            type: footnote
+      -
+        type: text
+        text: " of happiness have been bringing joy to people's lives for generations. Whether you prefer them glazed, frosted, filled, or topped with sprinkles, there's a donut out there for everyone."
+  -
+    type: paragraph
+    attrs:
+      bts_key: null
+    content:
+      -
+        type: text
+        text: "Think about it, who wouldn't want to start their day with a sweet and satisfying bite of a warm and gooey donut? Or maybe"
+      -
+        type: btsPin
+        attrs:
+          id: lvdoms2u
+          values:
+            note:
+              -
+                type: paragraph
+                attrs:
+                  bts_key: null
+                content:
+                  -
+                    type: text
+                    text: "There's a donut out there for everyone."
+            type: footnote
+      -
+        type: text
+        text: " you're more of a fan of the classic, old-fashioned donut with its crunchy exterior and soft interior. And let's not forget about the toppings. You can go for the classic and keep it simple with a sprinkle of powdered sugar or take it to the next level with toppings like bacon, cereal, or even donut ice cream sandwiches. The possibilities are endless!"
 ---

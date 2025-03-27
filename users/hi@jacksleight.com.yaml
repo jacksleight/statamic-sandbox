@@ -6,6 +6,23 @@ preferences:
   collections:
     texstyle_test:
       after_save: continue_editing
+    blog:
+      columns:
+        - title
+        - slug
+        - date
+        - author
+        - status
+        - hero_image
+    mutator_test:
+      columns:
+        - title
+        - slug
+        - status
+        - bard_2
+        - bard_1
+      after_save: continue_editing
   assets:
     assets:
       mode: grid
+  theme: light

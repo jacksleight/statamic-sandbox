@@ -1,0 +1,46 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: bard_1
+            field:
+              remove_empty_nodes: true
+              type: bard
+              display: 'Bard 1'
+              bmu_plugins:
+                - red_paragraphs
+                - green_headings
+          -
+            handle: bard_2
+            field:
+              remove_empty_nodes: false
+              type: bard
+              display: 'Bard 2'
+              bmu_plugins:
+                - blue_paragraphs
+                - green_headings
+              save_html: true
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate:
+                - 'max:200'
+                - 'new \Statamic\Rules\UniqueEntryValue({collection}, {id}, {site})'
+title: 'Mutator Test'

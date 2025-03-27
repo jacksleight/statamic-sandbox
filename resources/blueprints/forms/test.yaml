@@ -1,0 +1,30 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: radio_field
+            field:
+              help_text:
+                -
+                  type: paragraph
+                  attrs:
+                    class: null
+                  content:
+                    -
+                      type: text
+                      text: 'Example '
+                    -
+                      type: btsPin
+                      attrs:
+                        id: m3iqvrbu
+                        values:
+                          src: pizza.svg
+                          type: icon
+                    -
+                      type: text
+                      text: ' test.'
+              type: radio
+              display: 'Radio Field'
